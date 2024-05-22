@@ -2,10 +2,10 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-// Clase que representa una persona con varios atributos personales
+// Clase que representa una persaona con varios atributos personales
 
 class Persona {
-
+    
     // Atributos privados de la clase Persona
 
     private String dni;
@@ -92,7 +92,7 @@ class Persona {
     }
 
     // Método toString para obtener una representación en texto de la persona
-    
+
     @Override
     public String toString() {
         return "DNI: " + dni + "\n" +

@@ -36,7 +36,7 @@ public class RegistroUsuario {
         System.out.print("Ingrese el código postal: ");
         persona.setCodigoPostal(scanner.nextLine());
 
-        System.out.print("Ingrese el teléfono: ");
+        System.out.print("Ingrease el teléfono: ");
         persona.setTelefono(scanner.nextLine());
 
         System.out.print("Ingrese la edad: ");
