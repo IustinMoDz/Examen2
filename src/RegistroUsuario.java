@@ -1,20 +1,28 @@
 import java.util.Scanner;
 
+// Clase principal que contiene el método main para la ejecución del programa
+
 public class RegistroUsuario {
 
     public static void main(String[] args) {
-        
-        Scanner scanner = new Scanner(System.in);
-        Persona persona = new Persona();
+
+        Scanner scanner = new Scanner(System.in); // Scanner para la entrada del usuario
+
+        Persona persona = new Persona(); // Crear una nueva instancia de Persona
+
+        // Recolección y validación de los datos del usuario
 
         System.out.print("Ingrese el DNI: ");
-        while (!persona.setDni(scanner.nextLine()));
+        while (!persona.setDni(scanner.nextLine()))
+            ;
 
         System.out.print("Ingrese el correo electrónico: ");
-        while (!persona.setCorreo(scanner.nextLine()));
+        while (!persona.setCorreo(scanner.nextLine()))
+            ;
 
         System.out.print("Ingrese la contraseña: ");
-        while (!persona.setContrasena(scanner.nextLine()));
+        while (!persona.setContrasena(scanner.nextLine()))
+            ;
 
         System.out.print("Ingrese el nombre: ");
         persona.setNombre(scanner.nextLine());
@@ -32,7 +40,10 @@ public class RegistroUsuario {
         persona.setTelefono(scanner.nextLine());
 
         System.out.print("Ingrese la edad: ");
-        while (!persona.setEdad(scanner.nextInt()));
+        while (!persona.setEdad(scanner.nextInt()))
+            ;
+
+        // Mostrar mensaje de éxito y detalles del usuario registrado
 
         System.out.println("Registro exitoso!");
         System.out.println("Detalles del usuario:");
